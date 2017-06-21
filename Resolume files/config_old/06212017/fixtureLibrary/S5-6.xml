@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Fixture name="Fixture" uuid="5f0a71f8282c47df96731e7bde5dbeb7" fixtureName="S5-6">
+	<Params name="Params">
+		<ParamFixturePixels storage="0" name="Pixels">
+			<ParamRange name="Width" default="1" value="26">
+				<ValueRange name="defaultRange" min="1" max="512"/>
+			</ParamRange>
+			<ParamRange name="Height" default="1" value="1">
+				<ValueRange name="defaultRange" min="1" max="512"/>
+			</ParamRange>
+			<ParamChoice name="Color Space" default="1" value="1" storeChoices="0"/>
+			<ParamChoice name="Distribution" default="170" value="170" storeChoices="0"/>
+			<ParamRange name="Gamma" default="2.5" value="1">
+				<ValueRange name="defaultRange" min="1" max="3"/>
+			</ParamRange>
+		</ParamFixturePixels>
+	</Params>
+</Fixture>
+

@@ -75,12 +75,12 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter orgDuration="2147933.1" duration="5000">
+          <parameter>
             <name value="Position"/>
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="3232" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -444,12 +444,12 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter orgDuration="25000000" duration="5000">
+          <parameter>
             <name value="Position"/>
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="3512" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -849,12 +849,12 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter orgDuration="25000000" duration="5000">
+          <parameter>
             <name value="Position"/>
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="3864" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1225,7 +1225,7 @@
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="2440" defaultValue="0" startValue="2176" stopValue="2616"/>
+            <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1580,21 +1580,6 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter orgDuration="25000000" duration="5000">
-            <name value="Position"/>
-            <nameGiven value="Position"/>
-            <textValue value=""/>
-            <extended value="0"/>
-            <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
-            <pointsOfInterest value="0"/>
-            <jumpToPointsOfInterest value="-1"/>
-            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
-            <direction value="0"/>
-            <playmode value="1"/>
-            <playmodeAway value="0"/>
-            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
-            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
-          </parameter>
           <parameter>
             <name value="Opacity"/>
             <nameGiven value="Opacity"/>
@@ -2966,6 +2951,7 @@
               <parameter paramControlType="2">
                 <name value="Duration"/>
                 <nameGiven value="Duration"/>
+                <values curValue="440" defaultValue="5000" startValue="0" stopValue="2.0736e+009"/>
               </parameter>
             </settings>
           </provider>

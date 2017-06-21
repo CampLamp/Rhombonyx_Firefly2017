@@ -1,0 +1,8 @@
+save as new file with the following naming format:
+<Initials>_<compositionName>_<Date><Version>
+Initials in format: <first><Middle><Last>
+date in following format: <MMDDYY>
+Versions increment with letters: A-Z
+
+ex:
+dlp_MappingTest_061417A

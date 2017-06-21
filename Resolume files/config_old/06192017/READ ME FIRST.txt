@@ -1,0 +1,30 @@
+RESOLUME CONFIG FOLDER INSTRUCTIONS:
+
+ABOUT:
+This folder should contain all files, housed within subfolders, that are relevant to the performance 
+system configuration.
+The contents of this folder should be capable of being pasted directly into the resolume filestructure to provide 
+all the necessary setup to Transfer a composition
+
+WHERE TO FIND CONTENTS:
+Default location: [Documents]/Resolume Arena <version#>
+
+Filestructure:
+	/config/
+		/fixtureLibrary/ - LED/DMX/lighting fixtures used in performance. needed for leds.
+		/Preferences/ - MIDI, key and OSC mappings from resolume.
+		/Presets/ - Advanced mapping and effect presets
+		/recorded/ - Recorded clips from the performance.
+		/unused/ - Unused folders from above structure.
+
+EMPTY FOLDERS:
+If no files exist or are needed within a certain directory,
+move the corresponding folder to the /unused/ directory to maintain structure.
+
+MISSING FOLDERS:
+check the /unused/ directory.
+
+UPDATING CONTENT:
+Each time folder contents are updated, copy the entire /config/ folder to the /config_old/ directory 
+and append the directory name with today's date 
+ex: Config_6142017.

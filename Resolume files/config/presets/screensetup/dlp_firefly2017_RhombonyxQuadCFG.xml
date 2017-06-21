@@ -6,9 +6,17 @@
 		<sizing>
 			<inputs>
 				<InputSize name="3:1" width="1920" height="1080"/>
-				<InputSize name="3:2" width="1920" height="1080"/>
-				<InputSize name="3:3" width="800" height="600"/>
+				<InputSize name="3:2" width="2400" height="1350"/>
+				<InputSize name="3:3" width="1920" height="1080"/>
+				<InputSize name="3:4" width="2400" height="1350"/>
 				<InputSize name="0:1" width="3840" height="2160"/>
+				<InputSize name="0:2" width="3840" height="2160"/>
+				<InputSize name="2:6" width="3840" height="2160"/>
+				<InputSize name="2:5" width="3840" height="2160"/>
+				<InputSize name="2:4" width="3840" height="2160"/>
+				<InputSize name="2:3" width="3840" height="2160"/>
+				<InputSize name="2:2" width="3840" height="2160"/>
+				<InputSize name="2:1" width="3840" height="2160"/>
 			</inputs>
 		</sizing>
 		<screens>
@@ -1543,11 +1551,162 @@
 					</OutputDeviceVirtual>
 				</OutputDevice>
 			</Screen>
+			<Screen name="LED Output" uniqueId="1498084166061">
+				<Params name="Params">
+					<Param name="Name" default="" value="LED Output"/>
+					<Param name="Enabled" default="1" value="1"/>
+					<Param name="Hidden" default="0" value="0"/>
+				</Params>
+				<Params name="Output">
+					<ParamRange name="Opacity" default="1" value="1">
+						<ValueRange name="defaultRange" min="0" max="1"/>
+					</ParamRange>
+					<ParamRange name="Brightness" default="0" value="0">
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Contrast" default="0" value="0">
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Red" default="0" value="0">
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Green" default="0" value="0">
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Blue" default="0" value="0">
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+					</ParamRange>
+				</Params>
+				<guides>
+					<ScreenGuide name="ScreenGuide" type="0">
+						<Params name="Params">
+							<ParamPixels name="Image"/>
+							<ParamRange name="Opacity" default="0.25" value="0.25">
+								<ValueRange name="defaultRange" min="0" max="1"/>
+							</ParamRange>
+						</Params>
+					</ScreenGuide>
+					<ScreenGuide name="ScreenGuide" type="1">
+						<Params name="Params">
+							<ParamPixels name="Image"/>
+							<ParamRange name="Opacity" default="0.25" value="0.25">
+								<ValueRange name="defaultRange" min="0" max="1"/>
+							</ParamRange>
+						</Params>
+					</ScreenGuide>
+				</guides>
+				<layers>
+					<Slice uniqueId="1498084166267">
+						<Params name="Common">
+							<Param name="Name" default="Layer" value="Slice 1"/>
+							<Param name="Enabled" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="3:3" storeChoices="0"/>
+							<Param name="Input Opacity" default="1" value="1"/>
+							<Param name="Input Bypass/Solo" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" default="0" value="0"/>
+							<ParamRange name="Brightness" default="0" value="0">
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" default="0" value="0">
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" default="0" value="0">
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" default="0" value="0">
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" default="0" value="0">
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" default="0" value="0"/>
+							<Param name="Black BG" default="0" value="0"/>
+							<ParamRange name="BRed" default="0" value="0">
+								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
+							</ParamRange>
+							<ParamRange name="BGreen" default="0" value="0">
+								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
+							</ParamRange>
+							<ParamRange name="BBlue" default="0" value="0">
+								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="3840" y="0"/>
+							<v x="3840" y="2164.7939453125"/>
+							<v x="0" y="2164.7939453125"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="1920" y="0"/>
+							<v x="1920" y="1080"/>
+							<v x="0" y="1080"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+							</Params>
+							<BezierWarper controlWidth="4" controlHeight="4">
+								<vertices>
+									<v x="0" y="0"/>
+									<v x="640" y="0"/>
+									<v x="1280" y="0"/>
+									<v x="1920" y="0"/>
+									<v x="0" y="360"/>
+									<v x="640" y="360"/>
+									<v x="1280" y="360"/>
+									<v x="1920" y="360"/>
+									<v x="0" y="720"/>
+									<v x="640" y="720"/>
+									<v x="1280" y="720"/>
+									<v x="1920" y="720"/>
+									<v x="0" y="1080"/>
+									<v x="640" y="1080"/>
+									<v x="1280" y="1080"/>
+									<v x="1920" y="1080"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="0" y="0"/>
+									<v x="1920" y="0"/>
+									<v x="1920" y="1080"/>
+									<v x="0" y="1080"/>
+								</src>
+								<dst>
+									<v x="0" y="0"/>
+									<v x="1920" y="0"/>
+									<v x="1920" y="1080"/>
+									<v x="0" y="1080"/>
+								</dst>
+							</Homography>
+						</Warper>
+					</Slice>
+				</layers>
+				<OutputDevice>
+					<OutputDeviceVirtual name="Virtual" deviceId="Virtual" idHash="0" width="2400" height="1350">
+						<Params name="Params">
+							<ParamRange name="Width" default="2400" value="2400">
+								<ValueRange name="defaultRange" min="1" max="16384"/>
+							</ParamRange>
+							<ParamRange name="Height" default="1350" value="1350">
+								<ValueRange name="defaultRange" min="1" max="16384"/>
+							</ParamRange>
+						</Params>
+					</OutputDeviceVirtual>
+				</OutputDevice>
+			</Screen>
 			<Screen name="Mapping Layer" uniqueId="1498020097269">
 				<Params name="Params">
 					<Param name="Name" default="" value="Mapping Layer"/>
 					<Param name="Enabled" default="1" value="1"/>
-					<Param name="Hidden" default="0" value="0"/>
+					<Param name="Hidden" default="0" value="1"/>
 				</Params>
 				<Params name="Output">
 					<ParamRange name="Opacity" default="1" value="1">
@@ -1594,7 +1753,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -1635,10 +1794,10 @@
 							<v x="3360" y="1080"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="1193.4222412109375" y="547.6087646484375"/>
-							<v x="1422.3385009765625" y="547.6087646484375"/>
-							<v x="1422.3385009765625" y="786.48974609375"/>
-							<v x="1193.4222412109375" y="786.48974609375"/>
+							<v x="1193.421875" y="547.6085205078125"/>
+							<v x="1422.338623046875" y="547.6085205078125"/>
+							<v x="1422.338623046875" y="786.489990234375"/>
+							<v x="1193.421875" y="786.489990234375"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -1673,9 +1832,9 @@
 								</src>
 								<dst>
 									<v x="1279.4127197265625" y="633.46734619140625"/>
-									<v x="1456.2293701171875" y="527.249755859375"/>
-									<v x="1318.69384765625" y="735.98321533203125"/>
-									<v x="1157.8602294921875" y="849.77276611328125"/>
+									<v x="1456.229248046875" y="527.24969482421875"/>
+									<v x="1318.6932373046875" y="735.9827880859375"/>
+									<v x="1157.8602294921875" y="849.7725830078125"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -1686,7 +1845,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -1728,9 +1887,9 @@
 						</InputRect>
 						<OutputRect orientation="0">
 							<v x="1227.920654296875" y="342.463134765625"/>
-							<v x="1412.363037109375" y="342.463134765625"/>
-							<v x="1412.363037109375" y="633.7755126953125"/>
-							<v x="1227.920654296875" y="633.7755126953125"/>
+							<v x="1412.363525390625" y="342.463134765625"/>
+							<v x="1412.363525390625" y="633.77581787109375"/>
+							<v x="1227.920654296875" y="633.77581787109375"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -1764,10 +1923,10 @@
 									<v x="1247" y="622.23541259765625"/>
 								</src>
 								<dst>
-									<v x="1227.9205322265625" y="466.48101806640625"/>
-									<v x="1359.71630859375" y="342.46307373046875"/>
-									<v x="1412.5657958984375" y="561.52374267578125"/>
-									<v x="1279.0125732421875" y="634.8468017578125"/>
+									<v x="1227.9207763671875" y="466.48110961914062"/>
+									<v x="1359.7164306640625" y="342.46319580078125"/>
+									<v x="1412.5662841796875" y="561.52392578125"/>
+									<v x="1279.0128173828125" y="634.8470458984375"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -1778,7 +1937,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -1819,10 +1978,10 @@
 							<v x="3360" y="540"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="1097.571044921875" y="337.66644287109375"/>
+							<v x="1097.57080078125" y="337.66644287109375"/>
 							<v x="1363.981689453125" y="337.66644287109375"/>
-							<v x="1363.981689453125" y="466.68231201171875"/>
-							<v x="1097.571044921875" y="466.68231201171875"/>
+							<v x="1363.981689453125" y="466.682373046875"/>
+							<v x="1097.57080078125" y="466.682373046875"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -1857,9 +2016,9 @@
 								</src>
 								<dst>
 									<v x="1195.7535400390625" y="337.66644287109375"/>
-									<v x="1363.9818115234375" y="354.89157104492187"/>
+									<v x="1363.9815673828125" y="354.89144897460937"/>
 									<v x="1233.0721435546875" y="466.682373046875"/>
-									<v x="1097.571044921875" y="437.39984130859375"/>
+									<v x="1097.57080078125" y="437.39981079101562"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -1870,7 +2029,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -1962,7 +2121,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2003,10 +2162,10 @@
 							<v x="2880.0166015625" y="1072.960205078125"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="1085.849609375" y="602.34912109375"/>
-							<v x="1273.75341796875" y="602.34912109375"/>
-							<v x="1273.75341796875" y="786.310302734375"/>
-							<v x="1085.849609375" y="786.310302734375"/>
+							<v x="1085.8494873046875" y="602.34912109375"/>
+							<v x="1273.7535400390625" y="602.34912109375"/>
+							<v x="1273.7535400390625" y="786.31005859375"/>
+							<v x="1085.8494873046875" y="786.31005859375"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2041,9 +2200,9 @@
 								</src>
 								<dst>
 									<v x="1153.6195068359375" y="602.34906005859375"/>
-									<v x="1310.1468505859375" y="642.5205078125"/>
-									<v x="1202.7471923828125" y="786.31024169921875"/>
-									<v x="1044.5966796875" y="805.7066650390625"/>
+									<v x="1310.146728515625" y="642.5203857421875"/>
+									<v x="1202.7471923828125" y="786.30999755859375"/>
+									<v x="1044.5965576171875" y="805.70672607421875"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2054,7 +2213,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2095,10 +2254,10 @@
 							<v x="2880" y="810"/>
 						</InputRect>
 						<OutputRect orientation="-1.1257184743881226">
-							<v x="949.80126953125" y="789.53558349609375"/>
-							<v x="1059.46142578125" y="559.63922119140625"/>
-							<v x="1155.197265625" y="605.30511474609375"/>
-							<v x="1045.5369873046875" y="835.20147705078125"/>
+							<v x="949.80108642578125" y="789.5355224609375"/>
+							<v x="1059.4613037109375" y="559.63916015625"/>
+							<v x="1155.1968994140625" y="605.304931640625"/>
+							<v x="1045.5367431640625" y="835.2012939453125"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2132,10 +2291,10 @@
 									<v x="1321.75634765625" y="997.341064453125"/>
 								</src>
 								<dst>
-									<v x="1152.1524658203125" y="603.83245849609375"/>
-									<v x="1014.3514404296875" y="660.8251953125"/>
-									<v x="949.79266357421875" y="789.55242919921875"/>
-									<v x="1087.7840576171875" y="746.64312744140625"/>
+									<v x="1152.1527099609375" y="603.83258056640625"/>
+									<v x="1014.3515625" y="660.824951171875"/>
+									<v x="949.7926025390625" y="789.5523681640625"/>
+									<v x="1087.783935546875" y="746.64312744140625"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2146,7 +2305,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2238,7 +2397,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2363,7 +2522,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2404,10 +2563,10 @@
 							<v x="2400" y="1075.2059326171875"/>
 						</InputRect>
 						<OutputRect orientation="1.0820859670639038">
-							<v x="827.5380859375" y="568.55755615234375"/>
-							<v x="945.280029296875" y="789.98834228515625"/>
-							<v x="855.0965576171875" y="837.94183349609375"/>
-							<v x="737.3546142578125" y="616.51104736328125"/>
+							<v x="827.5379638671875" y="568.5574951171875"/>
+							<v x="945.2801513671875" y="789.988525390625"/>
+							<v x="855.0968017578125" y="837.94189453125"/>
+							<v x="737.3546142578125" y="616.5108642578125"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2442,9 +2601,9 @@
 								</src>
 								<dst>
 									<v x="743.5303955078125" y="613.2257080078125"/>
-									<v x="882.75836181640625" y="672.40667724609375"/>
-									<v x="938.64862060546875" y="793.5155029296875"/>
-									<v x="808.10107421875" y="749.5604248046875"/>
+									<v x="882.75848388671875" y="672.40673828125"/>
+									<v x="938.64886474609375" y="793.5157470703125"/>
+									<v x="808.1011962890625" y="749.56036376953125"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2455,7 +2614,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2496,8 +2655,8 @@
 							<v x="2400" y="805.2059326171875"/>
 						</InputRect>
 						<OutputRect orientation="1.5273120403289795">
-							<v x="942.5716552734375" y="447.522705078125"/>
-							<v x="952.020263671875" y="664.67236328125"/>
+							<v x="942.571533203125" y="447.522705078125"/>
+							<v x="952.0201416015625" y="664.67236328125"/>
 							<v x="739.2757568359375" y="673.92919921875"/>
 							<v x="729.8271484375" y="456.77960205078125"/>
 						</OutputRect>
@@ -2547,7 +2706,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2588,10 +2747,10 @@
 							<v x="2400" y="535.2059326171875"/>
 						</InputRect>
 						<OutputRect orientation="0.29670101404190063">
-							<v x="831.38287353515625" y="333.35427856445312"/>
-							<v x="1091.24169921875" y="412.79965209960937"/>
-							<v x="1047.635498046875" y="555.43145751953125"/>
-							<v x="787.77679443359375" y="475.98605346679687"/>
+							<v x="831.38275146484375" y="333.354248046875"/>
+							<v x="1091.2413330078125" y="412.799560546875"/>
+							<v x="1047.6351318359375" y="555.43133544921875"/>
+							<v x="787.77667236328125" y="475.98602294921875"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2626,9 +2785,9 @@
 								</src>
 								<dst>
 									<v x="933.842529296875" y="364.67880249023437"/>
-									<v x="1083.3355712890625" y="438.65966796875"/>
-									<v x="943.35699462890625" y="523.55084228515625"/>
-									<v x="796.728759765625" y="446.70468139648437"/>
+									<v x="1083.3353271484375" y="438.65960693359375"/>
+									<v x="943.35675048828125" y="523.55078125"/>
+									<v x="796.7286376953125" y="446.70465087890625"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2639,7 +2798,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2680,10 +2839,10 @@
 							<v x="2399.94970703125" y="261.80767822265625"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="625.14898681640625" y="444.77902221679687"/>
-							<v x="797.92828369140625" y="444.77902221679687"/>
-							<v x="797.92828369140625" y="642.88818359375"/>
-							<v x="625.14898681640625" y="642.88818359375"/>
+							<v x="625.14892578125" y="444.7789306640625"/>
+							<v x="797.92822265625" y="444.7789306640625"/>
+							<v x="797.92822265625" y="642.88818359375"/>
+							<v x="625.14892578125" y="642.88818359375"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2718,9 +2877,9 @@
 								</src>
 								<dst>
 									<v x="656" y="472"/>
-									<v x="797.92828369140625" y="444.779052734375"/>
-									<v x="736.2261962890625" y="602.9637451171875"/>
-									<v x="625.14898681640625" y="642.88824462890625"/>
+									<v x="797.92828369140625" y="444.77890014648437"/>
+									<v x="736.2261962890625" y="602.96368408203125"/>
+									<v x="625.14892578125" y="642.88818359375"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2731,7 +2890,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2772,10 +2931,10 @@
 							<v x="1920" y="1080.1513671875"/>
 						</InputRect>
 						<OutputRect orientation="-0.54976952075958252">
-							<v x="616.34344482421875" y="647.6484375"/>
-							<v x="722.66741943359375" y="582.494384765625"/>
-							<v x="819.86004638671875" y="741.1015625"/>
-							<v x="713.53607177734375" y="806.255615234375"/>
+							<v x="616.34344482421875" y="647.64862060546875"/>
+							<v x="722.66729736328125" y="582.49456787109375"/>
+							<v x="819.85992431640625" y="741.10186767578125"/>
+							<v x="713.53607177734375" y="806.25592041015625"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2810,9 +2969,9 @@
 								</src>
 								<dst>
 									<v x="616.34344482421875" y="647.6484375"/>
-									<v x="733.806396484375" y="600.671875"/>
-									<v x="812.88238525390625" y="745.37750244140625"/>
-									<v x="709.9361572265625" y="792.35406494140625"/>
+									<v x="733.8062744140625" y="600.67181396484375"/>
+									<v x="812.882568359375" y="745.3775634765625"/>
+									<v x="709.93634033203125" y="792.35406494140625"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2823,7 +2982,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2864,10 +3023,10 @@
 							<v x="1920" y="805.205810546875"/>
 						</InputRect>
 						<OutputRect orientation="1.6144025325775146">
-							<v x="708.6834716796875" y="570.85113525390625"/>
-							<v x="699.4542236328125" y="782.36602783203125"/>
-							<v x="471.7623291015625" y="772.43096923828125"/>
-							<v x="480.9915771484375" y="560.91607666015625"/>
+							<v x="708.68353271484375" y="570.85125732421875"/>
+							<v x="699.45428466796875" y="782.36627197265625"/>
+							<v x="471.76239013671875" y="772.43121337890625"/>
+							<v x="480.99163818359375" y="560.91619873046875"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2902,9 +3061,9 @@
 								</src>
 								<dst>
 									<v x="480.9801025390625" y="560.89697265625"/>
-									<v x="623.35589599609375" y="642.16546630859375"/>
-									<v x="699.4608154296875" y="782.3782958984375"/>
-									<v x="589.60113525390625" y="742.66693115234375"/>
+									<v x="623.35595703125" y="642.16534423828125"/>
+									<v x="699.46087646484375" y="782.37835693359375"/>
+									<v x="589.60113525390625" y="742.6668701171875"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -2915,7 +3074,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -2956,10 +3115,10 @@
 							<v x="1920" y="535.2059326171875"/>
 						</InputRect>
 						<OutputRect orientation="1.5707700252532959">
-							<v x="661.25897216796875" y="373.60223388671875"/>
-							<v x="661.26617431640625" y="646.35614013671875"/>
-							<v x="481.18255615234375" y="646.36090087890625"/>
-							<v x="481.17535400390625" y="373.60699462890625"/>
+							<v x="661.2589111328125" y="373.6019287109375"/>
+							<v x="661.26611328125" y="646.35614013671875"/>
+							<v x="481.18270874023437" y="646.36090087890625"/>
+							<v x="481.17550659179687" y="373.606689453125"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -2994,9 +3153,9 @@
 								</src>
 								<dst>
 									<v x="661.26177978515625" y="480.82662963867187"/>
-									<v x="628.62127685546875" y="646.35711669921875"/>
-									<v x="481.1806640625" y="574.29742431640625"/>
-									<v x="502.065185546875" y="373.6064453125"/>
+									<v x="628.62127685546875" y="646.35693359375"/>
+									<v x="481.18081665039062" y="574.2974853515625"/>
+									<v x="502.06527709960937" y="373.60614013671875"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -3007,7 +3166,7 @@
 							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -3048,10 +3207,10 @@
 							<v x="1920" y="265.2059326171875"/>
 						</InputRect>
 						<OutputRect orientation="1.5096844434738159">
-							<v x="791.7762451171875" y="345.29144287109375"/>
-							<v x="799.1158447265625" y="465.2431640625"/>
-							<v x="517.003173828125" y="482.50506591796875"/>
-							<v x="509.66357421875" y="362.5533447265625"/>
+							<v x="791.77655029296875" y="345.2913818359375"/>
+							<v x="799.11614990234375" y="465.2431640625"/>
+							<v x="517.00323486328125" y="482.505126953125"/>
+							<v x="509.66363525390625" y="362.5533447265625"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -3086,9 +3245,9 @@
 								</src>
 								<dst>
 									<v x="673.2056884765625" y="352.5465087890625"/>
-									<v x="797.7080078125" y="442.235107421875"/>
-									<v x="658.14471435546875" y="473.86892700195313"/>
-									<v x="510.53903198242187" y="376.86236572265625"/>
+									<v x="797.70831298828125" y="442.23507690429688"/>
+									<v x="658.144775390625" y="473.8690185546875"/>
+									<v x="510.53897094726562" y="376.86233520507812"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -3111,7 +3270,7 @@
 				<Params name="Params">
 					<Param name="Name" default="" value="Projector output"/>
 					<Param name="Enabled" default="1" value="1"/>
-					<Param name="Hidden" default="0" value="0"/>
+					<Param name="Hidden" default="0" value="1"/>
 				</Params>
 				<Params name="Output">
 					<ParamRange name="Opacity" default="1" value="1">
@@ -3152,197 +3311,13 @@
 					</ScreenGuide>
 				</guides>
 				<layers>
-					<Slice uniqueId="1498020097775">
-						<Params name="Common">
-							<Param name="Name" default="Layer" value="Slice 2"/>
-							<Param name="Enabled" default="1" value="1"/>
-						</Params>
-						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="3:2" storeChoices="0"/>
-							<Param name="Input Opacity" default="1" value="1"/>
-							<Param name="Input Bypass/Solo" default="1" value="1"/>
-							<Param name="SoftEdgeEnable" default="0" value="0"/>
-						</Params>
-						<Params name="Output">
-							<Param name="Flip" default="0" value="0"/>
-							<ParamRange name="Brightness" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Contrast" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Red" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Green" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Blue" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<Param name="Is Key" default="0" value="0"/>
-							<Param name="Black BG" default="0" value="0"/>
-							<ParamRange name="BRed" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-							<ParamRange name="BGreen" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-							<ParamRange name="BBlue" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-						</Params>
-						<InputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="3840" y="0"/>
-							<v x="3840" y="2160"/>
-							<v x="0" y="2160"/>
-						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="0.0001220703125"/>
-							<v x="2400" y="0.0001220703125"/>
-							<v x="2400" y="1350"/>
-							<v x="0" y="1350"/>
-						</OutputRect>
-						<Warper>
-							<Params name="Warper">
-								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
-							</Params>
-							<BezierWarper controlWidth="4" controlHeight="4">
-								<vertices>
-									<v x="0" y="0.0001220703125"/>
-									<v x="800" y="0.0001220703125"/>
-									<v x="1600" y="0.0001220703125"/>
-									<v x="2400" y="0.0001220703125"/>
-									<v x="0" y="450.00009155273438"/>
-									<v x="800" y="450.00009155273438"/>
-									<v x="1600" y="450.00009155273438"/>
-									<v x="2400" y="450.00009155273438"/>
-									<v x="0" y="900"/>
-									<v x="800" y="899.99993896484375"/>
-									<v x="1600" y="899.99993896484375"/>
-									<v x="2400" y="900"/>
-									<v x="0" y="1350"/>
-									<v x="800" y="1350"/>
-									<v x="1600" y="1350"/>
-									<v x="2400" y="1350"/>
-								</vertices>
-							</BezierWarper>
-							<Homography>
-								<src>
-									<v x="0" y="0.0001220703125"/>
-									<v x="2400" y="0.0001220703125"/>
-									<v x="2400" y="1350"/>
-									<v x="0" y="1350"/>
-								</src>
-								<dst>
-									<v x="0" y="0.0001220703125"/>
-									<v x="2400" y="0.0001220703125"/>
-									<v x="2400" y="1350"/>
-									<v x="0" y="1350"/>
-								</dst>
-							</Homography>
-						</Warper>
-					</Slice>
-					<Slice uniqueId="1498023184428">
-						<Params name="Common">
-							<Param name="Name" default="Layer" value="Slice 3"/>
-							<Param name="Enabled" default="1" value="1"/>
-						</Params>
-						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="3:2" storeChoices="0"/>
-							<Param name="Input Opacity" default="1" value="1"/>
-							<Param name="Input Bypass/Solo" default="1" value="1"/>
-							<Param name="SoftEdgeEnable" default="0" value="0"/>
-						</Params>
-						<Params name="Output">
-							<Param name="Flip" default="0" value="0"/>
-							<ParamRange name="Brightness" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Contrast" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Red" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Green" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Blue" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<Param name="Is Key" default="0" value="0"/>
-							<Param name="Black BG" default="0" value="0"/>
-							<ParamRange name="BRed" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-							<ParamRange name="BGreen" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-							<ParamRange name="BBlue" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-						</Params>
-						<InputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="3840" y="0"/>
-							<v x="3840" y="2160"/>
-							<v x="0" y="2160"/>
-						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="2400" y="0"/>
-							<v x="2400" y="1350"/>
-							<v x="0" y="1350"/>
-						</OutputRect>
-						<Warper>
-							<Params name="Warper">
-								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
-							</Params>
-							<BezierWarper controlWidth="4" controlHeight="4">
-								<vertices>
-									<v x="0" y="0"/>
-									<v x="800" y="0"/>
-									<v x="1600" y="0"/>
-									<v x="2400" y="0"/>
-									<v x="0" y="450"/>
-									<v x="800" y="450"/>
-									<v x="1600" y="450"/>
-									<v x="2400" y="450"/>
-									<v x="0" y="900"/>
-									<v x="800" y="900"/>
-									<v x="1600" y="900"/>
-									<v x="2400" y="900"/>
-									<v x="0" y="1350"/>
-									<v x="800" y="1350"/>
-									<v x="1600" y="1350"/>
-									<v x="2400" y="1350"/>
-								</vertices>
-							</BezierWarper>
-							<Homography>
-								<src>
-									<v x="0" y="0"/>
-									<v x="2400" y="0"/>
-									<v x="2400" y="1350"/>
-									<v x="0" y="1350"/>
-								</src>
-								<dst>
-									<v x="0" y="0"/>
-									<v x="2400" y="0"/>
-									<v x="2400" y="1350"/>
-									<v x="0" y="1350"/>
-								</dst>
-							</Homography>
-						</Warper>
-					</Slice>
 					<Slice uniqueId="1498009866309">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="Slice 1"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="3:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="3:3" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" default="0" value="0"/>
@@ -3384,9 +3359,9 @@
 						</InputRect>
 						<OutputRect orientation="0">
 							<v x="0" y="0"/>
-							<v x="2400" y="0"/>
-							<v x="2400" y="1350.0001220703125"/>
-							<v x="0" y="1350.0001220703125"/>
+							<v x="2400.000244140625" y="0"/>
+							<v x="2400.000244140625" y="1350"/>
+							<v x="0" y="1350"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -3395,35 +3370,35 @@
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
 									<v x="0" y="0"/>
-									<v x="800" y="0"/>
-									<v x="1600" y="0"/>
-									<v x="2400" y="0"/>
-									<v x="0" y="450.00006103515625"/>
-									<v x="800" y="450.00006103515625"/>
-									<v x="1600" y="450.00006103515625"/>
-									<v x="2400" y="450.00006103515625"/>
-									<v x="0" y="900.00006103515625"/>
-									<v x="800" y="900.0001220703125"/>
-									<v x="1600" y="900.0001220703125"/>
-									<v x="2400" y="900.00006103515625"/>
-									<v x="0" y="1350.0001220703125"/>
-									<v x="800" y="1350.0001220703125"/>
-									<v x="1600" y="1350.0001220703125"/>
-									<v x="2400" y="1350.0001220703125"/>
+									<v x="800.0001220703125" y="0"/>
+									<v x="1600.0001220703125" y="0"/>
+									<v x="2400.000244140625" y="0"/>
+									<v x="0" y="450"/>
+									<v x="800.0001220703125" y="450"/>
+									<v x="1600.000244140625" y="450"/>
+									<v x="2400.000244140625" y="450"/>
+									<v x="0" y="900"/>
+									<v x="800.0001220703125" y="900"/>
+									<v x="1600.000244140625" y="900"/>
+									<v x="2400.000244140625" y="900"/>
+									<v x="0" y="1350"/>
+									<v x="800.0001220703125" y="1350"/>
+									<v x="1600.0001220703125" y="1350"/>
+									<v x="2400.000244140625" y="1350"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
 									<v x="0" y="0"/>
-									<v x="2400" y="0"/>
-									<v x="2400" y="1350.0001220703125"/>
-									<v x="0" y="1350.0001220703125"/>
+									<v x="2400.000244140625" y="0"/>
+									<v x="2400.000244140625" y="1350"/>
+									<v x="0" y="1350"/>
 								</src>
 								<dst>
 									<v x="0" y="0"/>
-									<v x="2400" y="0"/>
-									<v x="2400" y="1350.0001220703125"/>
-									<v x="0" y="1350.0001220703125"/>
+									<v x="2400.000244140625" y="0"/>
+									<v x="2400.000244140625" y="1350"/>
+									<v x="0" y="1350"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -3506,167 +3481,16 @@
 					</Mask>
 				</layers>
 				<OutputDevice>
-					<OutputDeviceVirtual name="Virtual" deviceId="Virtual" idHash="0" width="800" height="600">
+					<OutputDeviceVirtual name="Virtual" deviceId="Virtual" idHash="0" width="2400" height="1350">
 						<Params name="Params">
-							<ParamRange name="Width" default="800" value="800">
+							<ParamRange name="Width" default="2400" value="2400">
 								<ValueRange name="defaultRange" min="1" max="16384"/>
 							</ParamRange>
-							<ParamRange name="Height" default="600" value="600">
+							<ParamRange name="Height" default="1350" value="1350">
 								<ValueRange name="defaultRange" min="1" max="16384"/>
 							</ParamRange>
 						</Params>
 					</OutputDeviceVirtual>
-				</OutputDevice>
-			</Screen>
-			<Screen name="Screen 3" uniqueId="1498009866140">
-				<Params name="Params">
-					<Param name="Name" default="" value="Screen 3"/>
-					<Param name="Enabled" default="1" value="1"/>
-					<Param name="Hidden" default="0" value="1"/>
-				</Params>
-				<Params name="Output">
-					<ParamRange name="Opacity" default="1" value="1">
-						<ValueRange name="defaultRange" min="0" max="1"/>
-					</ParamRange>
-					<ParamRange name="Brightness" default="0" value="0">
-						<ValueRange name="defaultRange" min="-1" max="1"/>
-					</ParamRange>
-					<ParamRange name="Contrast" default="0" value="0">
-						<ValueRange name="defaultRange" min="-1" max="1"/>
-					</ParamRange>
-					<ParamRange name="Red" default="0" value="0">
-						<ValueRange name="defaultRange" min="-1" max="1"/>
-					</ParamRange>
-					<ParamRange name="Green" default="0" value="0">
-						<ValueRange name="defaultRange" min="-1" max="1"/>
-					</ParamRange>
-					<ParamRange name="Blue" default="0" value="0">
-						<ValueRange name="defaultRange" min="-1" max="1"/>
-					</ParamRange>
-				</Params>
-				<guides>
-					<ScreenGuide name="ScreenGuide" type="0">
-						<Params name="Params">
-							<ParamPixels name="Image"/>
-							<ParamRange name="Opacity" default="0.25" value="0.25">
-								<ValueRange name="defaultRange" min="0" max="1"/>
-							</ParamRange>
-						</Params>
-					</ScreenGuide>
-					<ScreenGuide name="ScreenGuide" type="1">
-						<Params name="Params">
-							<ParamPixels name="Image"/>
-							<ParamRange name="Opacity" default="0.25" value="0.25">
-								<ValueRange name="defaultRange" min="0" max="1"/>
-							</ParamRange>
-						</Params>
-					</ScreenGuide>
-				</guides>
-				<layers>
-					<Slice uniqueId="1498009866310">
-						<Params name="Common">
-							<Param name="Name" default="Layer" value="Slice 1"/>
-							<Param name="Enabled" default="1" value="1"/>
-						</Params>
-						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="2:3" storeChoices="0"/>
-							<Param name="Input Opacity" default="1" value="1"/>
-							<Param name="Input Bypass/Solo" default="1" value="1"/>
-							<Param name="SoftEdgeEnable" default="0" value="0"/>
-						</Params>
-						<Params name="Output">
-							<Param name="Flip" default="0" value="0"/>
-							<ParamRange name="Brightness" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Contrast" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Red" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Green" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Blue" default="0" value="0">
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-							</ParamRange>
-							<Param name="Is Key" default="0" value="0"/>
-							<Param name="Black BG" default="0" value="0"/>
-							<ParamRange name="BRed" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-							<ParamRange name="BGreen" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-							<ParamRange name="BBlue" default="0" value="0">
-								<ValueRange name="defaultRange" min="0" max="0.40000000000000002"/>
-							</ParamRange>
-						</Params>
-						<InputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="1280" y="0"/>
-							<v x="1280" y="720"/>
-							<v x="0" y="720"/>
-						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="1280" y="0"/>
-							<v x="1280" y="720"/>
-							<v x="0" y="720"/>
-						</OutputRect>
-						<Warper>
-							<Params name="Warper">
-								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
-							</Params>
-							<BezierWarper controlWidth="4" controlHeight="4">
-								<vertices>
-									<v x="0" y="0"/>
-									<v x="426.66668701171875" y="0"/>
-									<v x="853.33331298828125" y="0"/>
-									<v x="1280" y="0"/>
-									<v x="0" y="240"/>
-									<v x="426.66668701171875" y="240"/>
-									<v x="853.3333740234375" y="240"/>
-									<v x="1280" y="240"/>
-									<v x="0" y="480"/>
-									<v x="426.66668701171875" y="480"/>
-									<v x="853.3333740234375" y="480"/>
-									<v x="1280" y="480"/>
-									<v x="0" y="720"/>
-									<v x="426.66668701171875" y="720"/>
-									<v x="853.33331298828125" y="720"/>
-									<v x="1280" y="720"/>
-								</vertices>
-							</BezierWarper>
-							<Homography>
-								<src>
-									<v x="0" y="0"/>
-									<v x="1280" y="0"/>
-									<v x="1280" y="720"/>
-									<v x="0" y="720"/>
-								</src>
-								<dst>
-									<v x="0" y="0"/>
-									<v x="1280" y="0"/>
-									<v x="1280" y="720"/>
-									<v x="0" y="720"/>
-								</dst>
-							</Homography>
-						</Warper>
-					</Slice>
-				</layers>
-				<OutputDevice>
-					<OutputDeviceSpout name="Screen 3" deviceId="Spout" idHash="2545678097" width="1280" height="720">
-						<Params name="Params">
-							<ParamRange name="Width" default="1280" value="1280">
-								<ValueRange name="defaultRange" min="1" max="16384"/>
-							</ParamRange>
-							<ParamRange name="Height" default="720" value="720">
-								<ValueRange name="defaultRange" min="1" max="16384"/>
-							</ParamRange>
-						</Params>
-					</OutputDeviceSpout>
 				</OutputDevice>
 			</Screen>
 			<DmxScreen name="LEDStrip1" uniqueId="1497584895919" LumiverseId="0">
@@ -3717,10 +3541,10 @@
 					<DmxSlice uniqueId="1497584895920">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 63 S1-1-21"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:5" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="064ec4464e7546009096b8873bda6b01" storeChoices="0"/>
@@ -3782,10 +3606,10 @@
 					<DmxSlice uniqueId="1497584895924">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="64 - 120 S1-2"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:5" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="83b12bd032fe448584e84ade7dd69084" storeChoices="0"/>
@@ -3847,10 +3671,10 @@
 					<DmxSlice uniqueId="1497588173957">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="121 - 192 S1-3-21"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:5" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="ea27888f57e7464f97966af8af0e3d4c" storeChoices="0"/>
@@ -3912,10 +3736,10 @@
 					<DmxSlice uniqueId="1497588173959">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="193 - 264 S1-4"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:5" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="65ff24ce2bc44e20a8125220647198ef" storeChoices="0"/>
@@ -3977,10 +3801,10 @@
 					<DmxSlice uniqueId="1497588173971">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="265 - 327 S1-5"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:5" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="f3ecccd0c56b48f6a9a77c41a5e36a2a" storeChoices="0"/>
@@ -4042,10 +3866,10 @@
 					<DmxSlice uniqueId="1497588173973">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="328 - 384 S1-6"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="2:5" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="36bdb80bfaa545ad9acd16df36036d9a" storeChoices="0"/>
@@ -4166,10 +3990,10 @@
 					<DmxSlice uniqueId="1497588173981">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 63 S2-1"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="3:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="798a53f946864d00ba6b876036dbcfad" storeChoices="0"/>
@@ -4231,10 +4055,10 @@
 					<DmxSlice uniqueId="1497588173982">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="64 - 126 S2-2"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="3:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="ec3c5d6937564825a8a396e33ab1d116" storeChoices="0"/>
@@ -4296,10 +4120,10 @@
 					<DmxSlice uniqueId="1497588173983">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="127 - 183 S2-3"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="3:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="ea522ff3ee8a487e944ac8e1c64a6da6" storeChoices="0"/>
@@ -4361,10 +4185,10 @@
 					<DmxSlice uniqueId="1497588173984">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="184 - 264 S2-4"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="3:4" storeChoices="0"/>
 							<Param name="Input Opacity" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" default="1" value="1"/>
 							<ParamChoice storage="3" name="Fixture" default="" value="75bf0307a03f47b99ca2635a4811add2" storeChoices="0"/>
@@ -4426,7 +4250,7 @@
 					<DmxSlice uniqueId="1497588173985">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="265 - 345 S2-5"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4491,7 +4315,7 @@
 					<DmxSlice uniqueId="1497588173986">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="346 - 402 S2-6"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4556,7 +4380,7 @@
 					<DmxSlice uniqueId="1497588173988">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="403 - 465 S2-7"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4621,7 +4445,7 @@
 					<DmxSlice uniqueId="1497588173990">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="466 - 510 S2-8A"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4745,7 +4569,7 @@
 					<DmxSlice uniqueId="1497821025816">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 18 S2-8B"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4869,7 +4693,7 @@
 					<DmxSlice uniqueId="1497588174035">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 78 S3-6"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4934,7 +4758,7 @@
 					<DmxSlice uniqueId="1497588174034">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="79 - 150 S3-5"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -4999,7 +4823,7 @@
 					<DmxSlice uniqueId="1497588174033">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="151 - 210 S3-4"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5064,7 +4888,7 @@
 					<DmxSlice uniqueId="1497588174032">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="211 - 288 S3-3"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5129,7 +4953,7 @@
 					<DmxSlice uniqueId="1497588174031">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="289 - 360 S3-2"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5194,7 +5018,7 @@
 					<DmxSlice uniqueId="1497588174030">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="361 - 438 S3-1"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5318,7 +5142,7 @@
 					<DmxSlice uniqueId="1497821025202">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 78 S4-1"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5383,7 +5207,7 @@
 					<DmxSlice uniqueId="1497821025203">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="79 - 153 S4-2"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5448,7 +5272,7 @@
 					<DmxSlice uniqueId="1497821025204">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="154 - 231 S4-3"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5513,7 +5337,7 @@
 					<DmxSlice uniqueId="1497821025205">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="232 - 306 S4-4"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5578,7 +5402,7 @@
 					<DmxSlice uniqueId="1497821025206">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="307 - 381 S4-5"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5643,7 +5467,7 @@
 					<DmxSlice uniqueId="1497821025207">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="382 - 459 S4-6"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5708,7 +5532,7 @@
 					<DmxSlice uniqueId="1497821025236">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="460 - 510 S4-7A"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5832,7 +5656,7 @@
 					<DmxSlice uniqueId="1497821025645">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 24 S4-7B"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -5897,7 +5721,7 @@
 					<DmxSlice uniqueId="1497821025643">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="25 - 102 S4-8"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6021,7 +5845,7 @@
 					<DmxSlice uniqueId="1497821025326">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 78 S5-1"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6086,7 +5910,7 @@
 					<DmxSlice uniqueId="1497821025325">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="79 - 150 S5-2"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6151,7 +5975,7 @@
 					<DmxSlice uniqueId="1497821025324">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="151 - 210 S5-3"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6216,7 +6040,7 @@
 					<DmxSlice uniqueId="1497821025323">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="211 - 288 S5-4"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6281,7 +6105,7 @@
 					<DmxSlice uniqueId="1497821025322">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="289 - 360 S5-5"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6346,7 +6170,7 @@
 					<DmxSlice uniqueId="1497821025321">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="361 - 438 S5-6"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6470,7 +6294,7 @@
 					<DmxSlice uniqueId="1497821025334">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="1 - 63 S6-1"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6535,7 +6359,7 @@
 					<DmxSlice uniqueId="1497821025335">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="64 - 120 S6-2"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6600,7 +6424,7 @@
 					<DmxSlice uniqueId="1497821025336">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="121 - 192 S6-3"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6665,7 +6489,7 @@
 					<DmxSlice uniqueId="1497821025337">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="193 - 264 S6-4"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6730,7 +6554,7 @@
 					<DmxSlice uniqueId="1497821025338">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="265 - 327 S6-5"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
@@ -6761,10 +6585,10 @@
 							</ParamRange>
 						</Params>
 						<InputRect orientation="-3.097907543182373">
-							<v x="1126.9273681640625" y="103.25950622558594"/>
-							<v x="931.313232421875" y="94.708633422851563"/>
-							<v x="931.7513427734375" y="84.685043334960937"/>
-							<v x="1127.3656005859375" y="93.235916137695313"/>
+							<v x="1126.9283447265625" y="103.25957489013672"/>
+							<v x="931.3135986328125" y="94.708686828613281"/>
+							<v x="931.751708984375" y="84.685050964355469"/>
+							<v x="1127.3665771484375" y="93.235939025878906"/>
 						</InputRect>
 						<OutputRect orientation="0">
 							<v x="-0.5" y="-0.5"/>
@@ -6795,7 +6619,7 @@
 					<DmxSlice uniqueId="1497821025339">
 						<Params name="Common">
 							<Param name="Name" default="Layer" value="328 - 384 S6-6"/>
-							<Param name="Enabled" default="1" value="0"/>
+							<Param name="Enabled" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>

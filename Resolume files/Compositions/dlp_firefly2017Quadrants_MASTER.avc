@@ -11,7 +11,7 @@
       </settings>
     </deck>
   </deckInfo>
-  <layerInfo layerCount="5" trackCount="9"/>
+  <layerInfo layerCount="5" trackCount="10"/>
   <playbackInfo>
     <bpm curValue="120" defaultValue="120" startValue="2" stopValue="500"/>
     <quantization value="6"/>
@@ -55,7 +55,7 @@
   </composition>
   <layer layerIndex="0">
     <settings>
-      <name value="Content 4"/>
+      <name value="Content 4(yellow)"/>
       <bypassed value="0"/>
       <solo value="0"/>
       <group value="-1"/>
@@ -75,12 +75,12 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter>
+          <parameter orgDuration="2147933.1" duration="5000">
             <name value="Position"/>
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="2655.0243" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="3232" defaultValue="0" startValue="0" stopValue="5000"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -187,6 +187,216 @@
           </parameter>
         </parameters>
       </settings>
+      <effects>
+        <effect uniquePresetId="106280718" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\SyzGL_VideoWall.dll"
+                uniqueId="sy88" name="VideoWall">
+          <mixer value="1984084"/>
+          <bypassed value="0">
+            <keyboardShortcut isContextual="0" path="" type="1" optionIndex="-1" loop="0" description="numpad 4"
+                              pianoMode="0" invertValue="0" relativeStepValue="0.0078125" startValue="0"
+                              stopValue="1"/>
+          </bypassed>
+          <folded value="0"/>
+          <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                       revision="56477" id="1"/>
+          <parameter>
+            <name value="Opacity"/>
+            <nameGiven value="Opacity"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param1"/>
+            <nameGiven value="Screens"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="0.300000012" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param2"/>
+            <nameGiven value="Zoom"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.498714653" defaultValue="0.300000012" startValue="0"
+                    stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param3"/>
+            <nameGiven value="RotateX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param4"/>
+            <nameGiven value="RotateY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param5"/>
+            <nameGiven value="RotateZ"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param6"/>
+            <nameGiven value="PanX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param7"/>
+            <nameGiven value="PanY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param8"/>
+            <nameGiven value="SubscreenSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.125" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param9"/>
+            <nameGiven value="SubscreenMode"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param10"/>
+            <nameGiven value="GapSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param11"/>
+            <nameGiven value="BrightnessVary"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter paramType="0">
+            <name value="param12"/>
+            <nameGiven value="Black BG"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+        </effect>
+      </effects>
     </videoLayer>
     <audioLayer>
       <settings>
@@ -212,7 +422,7 @@
   </layer>
   <layer layerIndex="1">
     <settings>
-      <name value="Content3"/>
+      <name value="Content3(green)"/>
       <bypassed value="0"/>
       <solo value="0"/>
       <group value="-1"/>
@@ -234,12 +444,12 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter>
+          <parameter orgDuration="25000000" duration="5000">
             <name value="Position"/>
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="2655.0243" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="3512" defaultValue="0" startValue="0" stopValue="5000"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -361,6 +571,216 @@
           </parameter>
         </parameters>
       </settings>
+      <effects>
+        <effect uniquePresetId="106280718" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\SyzGL_VideoWall.dll"
+                uniqueId="sy88" name="VideoWall">
+          <mixer value="1984084"/>
+          <bypassed value="0">
+            <keyboardShortcut isContextual="0" path="" type="1" optionIndex="-1" loop="0" description="numpad 3"
+                              pianoMode="0" invertValue="0" relativeStepValue="0.0078125" startValue="0"
+                              stopValue="1"/>
+          </bypassed>
+          <folded value="0"/>
+          <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                       revision="56477" id="1"/>
+          <parameter>
+            <name value="Opacity"/>
+            <nameGiven value="Opacity"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param1"/>
+            <nameGiven value="Screens"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="0.300000012" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param2"/>
+            <nameGiven value="Zoom"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.498714653" defaultValue="0.300000012" startValue="0"
+                    stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param3"/>
+            <nameGiven value="RotateX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param4"/>
+            <nameGiven value="RotateY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param5"/>
+            <nameGiven value="RotateZ"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param6"/>
+            <nameGiven value="PanX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param7"/>
+            <nameGiven value="PanY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param8"/>
+            <nameGiven value="SubscreenSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.125" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param9"/>
+            <nameGiven value="SubscreenMode"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.233933162" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param10"/>
+            <nameGiven value="GapSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param11"/>
+            <nameGiven value="BrightnessVary"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter paramType="0">
+            <name value="param12"/>
+            <nameGiven value="Black BG"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+        </effect>
+      </effects>
     </videoLayer>
     <audioLayer>
       <settings>
@@ -397,6 +817,27 @@
       <autoPilot>
         <action value="3"/>
       </autoPilot>
+      <ui>
+        <propertySectionsState value="0">
+          <choices>
+            <choice index="0" value="110" name="Dashboard" isEnabled="1" isActive="1"/>
+            <choice index="1" value="123" name="Video Info" isEnabled="1" isActive="1"/>
+            <choice index="2" value="121" name="Video FX" isEnabled="1" isActive="1"/>
+            <choice index="3" value="122" name="Video Transform" isEnabled="1" isActive="1"/>
+            <choice index="4" value="124" name="Video Mask" isEnabled="1" isActive="0"/>
+            <choice index="5" value="133" name="Audio Info" isEnabled="1" isActive="1"/>
+            <choice index="6" value="131" name="Audio FX" isEnabled="1" isActive="1"/>
+            <choice index="7" value="132" name="Audio Transform" isEnabled="1" isActive="1"/>
+            <choice index="8" value="140" name="Source" isEnabled="1" isActive="1"/>
+            <choice index="9" value="150" name="Transport" isEnabled="1" isActive="1"/>
+            <choice index="10" value="160" name="Cue points" isEnabled="1" isActive="0"/>
+            <choice index="11" value="170" name="Beatlooper" isEnabled="1" isActive="0"/>
+            <choice index="12" value="180" name="Auto Pilot" isEnabled="1" isActive="0"/>
+            <choice index="13" value="125" name="UV Map" isEnabled="1" isActive="0"/>
+            <choice index="14" value="126" name="UV Map Dest" isEnabled="1" isActive="0"/>
+          </choices>
+        </propertySectionsState>
+      </ui>
     </settings>
     <videoLayer>
       <settings renderPassOrder="0,1,2">
@@ -413,7 +854,7 @@
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="1587.46138" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="3864" defaultValue="0" startValue="0" stopValue="5000"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -535,7 +976,228 @@
           </parameter>
         </parameters>
       </settings>
+      <effects>
+        <effect uniquePresetId="27258671" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\SyzGL_VideoWall.dll"
+                uniqueId="sy88" name="VideoWall">
+          <mixer value="1984084"/>
+          <bypassed value="0">
+            <keyboardShortcut isContextual="0" path="" type="1" optionIndex="-1" loop="0" description="numpad 2"
+                              pianoMode="0" invertValue="0" relativeStepValue="0.0078125" startValue="0"
+                              stopValue="1"/>
+          </bypassed>
+          <folded value="0"/>
+          <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                       revision="56477" id="1"/>
+          <parameter>
+            <name value="Opacity"/>
+            <nameGiven value="Opacity"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param1"/>
+            <nameGiven value="Screens"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="0.300000012" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param2"/>
+            <nameGiven value="Zoom"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.498714653" defaultValue="0.300000012" startValue="0"
+                    stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param3"/>
+            <nameGiven value="RotateX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param4"/>
+            <nameGiven value="RotateY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param5"/>
+            <nameGiven value="RotateZ"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param6"/>
+            <nameGiven value="PanX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param7"/>
+            <nameGiven value="PanY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param8"/>
+            <nameGiven value="SubscreenSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.125" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param9"/>
+            <nameGiven value="SubscreenMode"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param10"/>
+            <nameGiven value="GapSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param11"/>
+            <nameGiven value="BrightnessVary"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter paramType="0">
+            <name value="param12"/>
+            <nameGiven value="Black BG"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+        </effect>
+      </effects>
     </videoLayer>
+    <audioLayer>
+      <settings>
+        <parameters>
+          <parameter>
+            <name value="Volume"/>
+            <nameGiven value="Volume"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.841796869" defaultValue="1" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+        </parameters>
+      </settings>
+    </audioLayer>
   </layer>
   <layer layerIndex="3">
     <settings>
@@ -563,7 +1225,7 @@
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="2831.81758" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="2440" defaultValue="0" startValue="2176" stopValue="2616"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -685,12 +1347,222 @@
           </parameter>
         </parameters>
       </settings>
+      <effects>
+        <effect uniquePresetId="106280718" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\SyzGL_VideoWall.dll"
+                uniqueId="sy88" name="VideoWall">
+          <mixer value="1984084"/>
+          <bypassed value="0">
+            <keyboardShortcut isContextual="0" path="" type="1" optionIndex="-1" loop="0" description="numpad 1"
+                              pianoMode="0" invertValue="0" relativeStepValue="0.0078125" startValue="0"
+                              stopValue="1"/>
+          </bypassed>
+          <folded value="0"/>
+          <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                       revision="56477" id="1"/>
+          <parameter>
+            <name value="Opacity"/>
+            <nameGiven value="Opacity"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param1"/>
+            <nameGiven value="Screens"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="1" defaultValue="0.300000012" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param2"/>
+            <nameGiven value="Zoom"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.498714653" defaultValue="0.300000012" startValue="0"
+                    stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param3"/>
+            <nameGiven value="RotateX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param4"/>
+            <nameGiven value="RotateY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param5"/>
+            <nameGiven value="RotateZ"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param6"/>
+            <nameGiven value="PanX"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param7"/>
+            <nameGiven value="PanY"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param8"/>
+            <nameGiven value="SubscreenSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0.125" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param9"/>
+            <nameGiven value="SubscreenMode"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param10"/>
+            <nameGiven value="GapSize"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter>
+            <name value="param11"/>
+            <nameGiven value="BrightnessVary"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+          <parameter paramType="0">
+            <name value="param12"/>
+            <nameGiven value="Black BG"/>
+            <textValue value=""/>
+            <extended value="0"/>
+            <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+            <pointsOfInterest value="0"/>
+            <jumpToPointsOfInterest value="-1"/>
+            <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
+            <direction value="3"/>
+            <playmode value="1"/>
+            <playmodeAway value="0"/>
+            <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
+            <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
+          </parameter>
+        </effect>
+      </effects>
     </videoLayer>
   </layer>
   <layer layerIndex="4">
     <settings>
       <name value="Mask"/>
-      <bypassed value="1"/>
+      <bypassed value="0"/>
       <solo value="0"/>
       <opacityAndVolume/>
       <transitionTime curValue="0" defaultValue="0" startValue="0" stopValue="10"/>
@@ -708,12 +1580,12 @@
           <mixer value="1984087" index="2" selected="0"/>
         </mixers>
         <parameters>
-          <parameter>
+          <parameter orgDuration="25000000" duration="5000">
             <name value="Position"/>
             <nameGiven value="Position"/>
             <textValue value=""/>
             <extended value="0"/>
-            <values curValue="2831.81758" defaultValue="0" startValue="0" stopValue="5000"/>
+            <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
             <pointsOfInterest value="0"/>
             <jumpToPointsOfInterest value="-1"/>
             <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -831,12 +1703,13 @@
   <track/>
   <track/>
   <track/>
+  <track/>
   <decks>
     <deck id="2710993" orderId="0" name="Solid Color" numClips="12" closed="0">
-      <clip uniqueId="1820493" layerIndex="0" trackIndex="0">
-        <settings fileId="1051112814">
-          <name value="Solid Color"/>
-          <nameGiven value="Solid Color"/>
+      <clip uniqueId="105469256" layerIndex="0" trackIndex="0">
+        <settings fileId="488181539">
+          <name value="Gradients"/>
+          <nameGiven value="Gradients"/>
           <desc value="empty clip"/>
           <quantization value="1"/>
           <target value="1"/>
@@ -846,27 +1719,36 @@
           </autoPilot>
         </settings>
         <videoClip>
-          <source type="ffgl" couldContainVideo="1" name="Solid Color" shortName="Solid Color"
-                  uniqueId="A403" fileName="C:\Program Files (x86)\Resolume Arena 5.0.1\plugins\vfx\AVFFGLSolidColor.dll"/>
+          <source type="ffgl" couldContainVideo="1" name="Gradients" shortName="Gradients"
+                  uniqueId="A401" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\AVFFGLGradients.dll"/>
           <provider transparent="1">
             <parameters>
               <parameter>
                 <name value="param1"/>
-                <nameGiven value="Hue"/>
-                <values curValue="0.632098765" defaultValue="0" startValue="0" stopValue="1"/>
+                <nameGiven value="Hue 1"/>
+                <values curValue="0.15" defaultValue="0" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param2"/>
-                <nameGiven value="Saturation"/>
-                <values curValue="1" defaultValue="1" startValue="0" stopValue="1"/>
+                <nameGiven value="Hue 2"/>
+                <values curValue="0.15" defaultValue="0.5" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param3"/>
-                <nameGiven value="Brightness"/>
+                <nameGiven value="Saturation"/>
               </parameter>
               <parameter>
                 <name value="param4"/>
-                <nameGiven value="Alpha"/>
+                <nameGiven value="Brightness"/>
+              </parameter>
+              <parameter>
+                <name value="param5"/>
+                <nameGiven value="Alpha 1"/>
+              </parameter>
+              <parameter>
+                <name value="param6"/>
+                <nameGiven value="Alpha 2"/>
+                <values curValue="0" defaultValue="1" startValue="0" stopValue="1"/>
               </parameter>
             </parameters>
             <settings>
@@ -885,7 +1767,7 @@
               </parameter>
             </settings>
           </provider>
-          <settings name="Solid Color" desc="Source&#13;&#10;&#13;&#10;" fileId="1051112814"
+          <settings name="Gradients" desc="Source&#13;&#10;&#13;&#10;" fileId="488181539"
                     renderPassOrder="0,1,2">
             <playbackSettings>
               <timelineMode value="3"/>
@@ -898,7 +1780,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="3789.25267" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="3496" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -927,6 +1809,29 @@
               </parameter>
             </parameters>
           </settings>
+          <effects>
+            <effect uniquePresetId="10000" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\FFGLCircles.dll"
+                    uniqueId="A125" name="Circles">
+              <bypassed value="0"/>
+              <folded value="0"/>
+              <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                           revision="56477" id="1"/>
+              <parameter>
+                <name value="Opacity"/>
+                <nameGiven value="Opacity"/>
+              </parameter>
+              <parameter>
+                <name value="param1"/>
+                <nameGiven value="size"/>
+                <values curValue="0.782051282" defaultValue="0.5" startValue="0" stopValue="1"/>
+              </parameter>
+              <parameter paramType="0">
+                <name value="param2"/>
+                <nameGiven value="Black BG"/>
+                <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
+              </parameter>
+            </effect>
+          </effects>
         </videoClip>
         <audioClip/>
       </clip>
@@ -1041,7 +1946,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="388.890601" defaultValue="0" startValue="0" stopValue="429.58662"/>
+                <values curValue="277.71544" defaultValue="0" startValue="0" stopValue="429.58662"/>
                 <pointsOfInterest value="0">
                   <choices>
                     <choice index="0" value="0" name="" isEnabled="1" isActive="0"/>
@@ -1191,15 +2096,14 @@
                 <name value="param1"/>
                 <nameGiven value="Feedback"/>
                 <extended value="1"/>
-                <values curValue="0.00785580277" defaultValue="0.899999976" startValue="0"
-                        stopValue="1"/>
+                <values curValue="0" defaultValue="0.899999976" startValue="0" stopValue="1"/>
                 <direction value="0"/>
                 <linkModifier curValue="0.62992126" defaultValue="0" startValue="0.62992126"
                               stopValue="0.724409449"/>
                 <modifiers>
                   <modifier type="3" index="999">
                     <properties>
-                      <Result value="0.00785580277"/>
+                      <Result value="0"/>
                     </properties>
                   </modifier>
                 </modifiers>
@@ -1225,14 +2129,13 @@
               <parameter paramSubType="3" linkedParamPath="/composition/audio/fftext/">
                 <name value="param2"/>
                 <nameGiven value="MaxDistortionX"/>
-                <values curValue="0.0151844347" defaultValue="0.140000001" startValue="0"
-                        stopValue="1"/>
+                <values curValue="0" defaultValue="0.140000001" startValue="0" stopValue="1"/>
                 <direction value="0"/>
                 <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="0.33"/>
                 <modifiers>
                   <modifier type="3" index="999">
                     <properties>
-                      <Result value="0.0151844347"/>
+                      <Result value="0"/>
                     </properties>
                   </modifier>
                 </modifiers>
@@ -1240,14 +2143,13 @@
               <parameter paramSubType="3" linkedParamPath="/composition/audio/fftext/">
                 <name value="param3"/>
                 <nameGiven value="MaxDistortionY"/>
-                <values curValue="0.0151844347" defaultValue="0.140000001" startValue="0"
-                        stopValue="1"/>
+                <values curValue="0" defaultValue="0.140000001" startValue="0" stopValue="1"/>
                 <direction value="0"/>
                 <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="0.33"/>
                 <modifiers>
                   <modifier type="3" index="999">
                     <properties>
-                      <Result value="0.0151844347"/>
+                      <Result value="0"/>
                     </properties>
                   </modifier>
                 </modifiers>
@@ -1265,10 +2167,10 @@
         </videoClip>
         <audioClip/>
       </clip>
-      <clip uniqueId="1820492" layerIndex="1" trackIndex="0">
-        <settings fileId="1051112814">
-          <name value="Solid Color"/>
-          <nameGiven value="Solid Color"/>
+      <clip uniqueId="105469253" layerIndex="1" trackIndex="0">
+        <settings fileId="488181539">
+          <name value="Gradients"/>
+          <nameGiven value="Gradients"/>
           <desc value="empty clip"/>
           <quantization value="1"/>
           <target value="1"/>
@@ -1278,26 +2180,36 @@
           </autoPilot>
         </settings>
         <videoClip>
-          <source type="ffgl" couldContainVideo="1" name="Solid Color" shortName="Solid Color"
-                  uniqueId="A403" fileName="C:\Program Files (x86)\Resolume Arena 5.0.1\plugins\vfx\AVFFGLSolidColor.dll"/>
+          <source type="ffgl" couldContainVideo="1" name="Gradients" shortName="Gradients"
+                  uniqueId="A401" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\AVFFGLGradients.dll"/>
           <provider transparent="1">
             <parameters>
               <parameter>
                 <name value="param1"/>
-                <nameGiven value="Hue"/>
-                <values curValue="0.251131222" defaultValue="0" startValue="0" stopValue="1"/>
+                <nameGiven value="Hue 1"/>
+                <values curValue="0.5" defaultValue="0" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param2"/>
-                <nameGiven value="Saturation"/>
+                <nameGiven value="Hue 2"/>
+                <values curValue="0.5" defaultValue="0.5" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param3"/>
-                <nameGiven value="Brightness"/>
+                <nameGiven value="Saturation"/>
               </parameter>
               <parameter>
                 <name value="param4"/>
-                <nameGiven value="Alpha"/>
+                <nameGiven value="Brightness"/>
+              </parameter>
+              <parameter>
+                <name value="param5"/>
+                <nameGiven value="Alpha 1"/>
+              </parameter>
+              <parameter>
+                <name value="param6"/>
+                <nameGiven value="Alpha 2"/>
+                <values curValue="0" defaultValue="1" startValue="0" stopValue="1"/>
               </parameter>
             </parameters>
             <settings>
@@ -1316,7 +2228,7 @@
               </parameter>
             </settings>
           </provider>
-          <settings name="Solid Color" desc="Source&#13;&#10;&#13;&#10;" fileId="1051112814"
+          <settings name="Gradients" desc="Source&#13;&#10;&#13;&#10;" fileId="488181539"
                     renderPassOrder="0,1,2">
             <playbackSettings>
               <timelineMode value="3"/>
@@ -1329,7 +2241,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="3940.27377" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="3904" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1358,6 +2270,28 @@
               </parameter>
             </parameters>
           </settings>
+          <effects>
+            <effect uniquePresetId="10000" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\FFGLCircles.dll"
+                    uniqueId="A125" name="Circles">
+              <folded value="0"/>
+              <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                           revision="56477" id="1"/>
+              <parameter>
+                <name value="Opacity"/>
+                <nameGiven value="Opacity"/>
+              </parameter>
+              <parameter>
+                <name value="param1"/>
+                <nameGiven value="size"/>
+                <values curValue="0.782051282" defaultValue="0.5" startValue="0" stopValue="1"/>
+              </parameter>
+              <parameter paramType="0">
+                <name value="param2"/>
+                <nameGiven value="Black BG"/>
+                <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
+              </parameter>
+            </effect>
+          </effects>
         </videoClip>
         <audioClip/>
       </clip>
@@ -1447,7 +2381,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="1023.94029" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="1040" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1520,14 +2454,14 @@
                 <name value="param1"/>
                 <nameGiven value="Hue"/>
                 <extended value="1"/>
-                <values curValue="0.048431851" defaultValue="0" startValue="0" stopValue="1"/>
+                <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
                 <direction value="0"/>
                 <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
                 <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="0.33"/>
                 <modifiers>
                   <modifier type="3" index="999">
                     <properties>
-                      <Result value="0.048431851"/>
+                      <Result value="0"/>
                     </properties>
                   </modifier>
                 </modifiers>
@@ -1549,10 +2483,10 @@
         </videoClip>
         <audioClip/>
       </clip>
-      <clip uniqueId="1820456" layerIndex="2" trackIndex="0">
-        <settings fileId="1051112814">
-          <name value="Solid Color"/>
-          <nameGiven value="Solid Color"/>
+      <clip uniqueId="105469250" layerIndex="2" trackIndex="0">
+        <settings fileId="488181539">
+          <name value="Gradients"/>
+          <nameGiven value="Gradients"/>
           <desc value="empty clip"/>
           <quantization value="1"/>
           <target value="1"/>
@@ -1562,26 +2496,36 @@
           </autoPilot>
         </settings>
         <videoClip>
-          <source type="ffgl" couldContainVideo="1" name="Solid Color" shortName="Solid Color"
-                  uniqueId="A403" fileName="C:\Program Files (x86)\Resolume Arena 5.0.1\plugins\vfx\AVFFGLSolidColor.dll"/>
+          <source type="ffgl" couldContainVideo="1" name="Gradients" shortName="Gradients"
+                  uniqueId="A401" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\AVFFGLGradients.dll"/>
           <provider transparent="1">
             <parameters>
               <parameter>
                 <name value="param1"/>
-                <nameGiven value="Hue"/>
-                <values curValue="0.502262443" defaultValue="0" startValue="0" stopValue="1"/>
+                <nameGiven value="Hue 1"/>
+                <values curValue="0.25" defaultValue="0" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param2"/>
-                <nameGiven value="Saturation"/>
+                <nameGiven value="Hue 2"/>
+                <values curValue="0.25" defaultValue="0.5" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param3"/>
-                <nameGiven value="Brightness"/>
+                <nameGiven value="Saturation"/>
               </parameter>
               <parameter>
                 <name value="param4"/>
-                <nameGiven value="Alpha"/>
+                <nameGiven value="Brightness"/>
+              </parameter>
+              <parameter>
+                <name value="param5"/>
+                <nameGiven value="Alpha 1"/>
+              </parameter>
+              <parameter>
+                <name value="param6"/>
+                <nameGiven value="Alpha 2"/>
+                <values curValue="0" defaultValue="1" startValue="0" stopValue="1"/>
               </parameter>
             </parameters>
             <settings>
@@ -1600,7 +2544,7 @@
               </parameter>
             </settings>
           </provider>
-          <settings name="Solid Color" desc="Source&#13;&#10;&#13;&#10;" fileId="1051112814"
+          <settings name="Gradients" desc="Source&#13;&#10;&#13;&#10;" fileId="488181539"
                     renderPassOrder="0,1,2">
             <playbackSettings>
               <timelineMode value="3"/>
@@ -1613,7 +2557,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="905.701702" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="3904" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1642,6 +2586,28 @@
               </parameter>
             </parameters>
           </settings>
+          <effects>
+            <effect uniquePresetId="10000" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\FFGLCircles.dll"
+                    uniqueId="A125" name="Circles">
+              <folded value="0"/>
+              <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                           revision="56477" id="1"/>
+              <parameter>
+                <name value="Opacity"/>
+                <nameGiven value="Opacity"/>
+              </parameter>
+              <parameter>
+                <name value="param1"/>
+                <nameGiven value="size"/>
+                <values curValue="0.782051282" defaultValue="0.5" startValue="0" stopValue="1"/>
+              </parameter>
+              <parameter paramType="0">
+                <name value="param2"/>
+                <nameGiven value="Black BG"/>
+                <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
+              </parameter>
+            </effect>
+          </effects>
         </videoClip>
         <audioClip/>
       </clip>
@@ -1695,7 +2661,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="481.275123" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="1040" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1820,7 +2786,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="1109.19655" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="3088" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -1893,14 +2859,14 @@
                 <name value="param1"/>
                 <nameGiven value="Hue"/>
                 <extended value="1"/>
-                <values curValue="0.0299682207" defaultValue="0" startValue="0" stopValue="1"/>
+                <values curValue="0" defaultValue="0" startValue="0" stopValue="1"/>
                 <direction value="0"/>
                 <linkMultiplier curValue="1" defaultValue="1" startValue="1" stopValue="4096"/>
                 <linkModifier curValue="0" defaultValue="0" startValue="0" stopValue="0.33"/>
                 <modifiers>
                   <modifier type="3" index="999">
                     <properties>
-                      <Result value="0.0299682207"/>
+                      <Result value="0"/>
                     </properties>
                   </modifier>
                 </modifiers>
@@ -1923,9 +2889,9 @@
         <audioClip/>
       </clip>
       <clip uniqueId="1820491" layerIndex="3" trackIndex="0">
-        <settings fileId="1051112814">
-          <name value="Solid Color"/>
-          <nameGiven value="Solid Color"/>
+        <settings fileId="488181539">
+          <name value="Gradients"/>
+          <nameGiven value="Gradients"/>
           <desc value="empty clip"/>
           <quantization value="1"/>
           <target value="1"/>
@@ -1933,28 +2899,59 @@
           <autoPilot>
             <action value="-1"/>
           </autoPilot>
+          <ui>
+            <propertySectionsState value="0">
+              <choices>
+                <choice index="0" value="110" name="Dashboard" isEnabled="1" isActive="0"/>
+                <choice index="1" value="123" name="Video Info" isEnabled="1" isActive="0"/>
+                <choice index="2" value="121" name="Video FX" isEnabled="1" isActive="1"/>
+                <choice index="3" value="122" name="Video Transform" isEnabled="1" isActive="1"/>
+                <choice index="4" value="124" name="Video Mask" isEnabled="1" isActive="0"/>
+                <choice index="5" value="133" name="Audio Info" isEnabled="1" isActive="1"/>
+                <choice index="6" value="131" name="Audio FX" isEnabled="1" isActive="1"/>
+                <choice index="7" value="132" name="Audio Transform" isEnabled="1" isActive="1"/>
+                <choice index="8" value="140" name="Source" isEnabled="1" isActive="1"/>
+                <choice index="9" value="150" name="Transport" isEnabled="1" isActive="1"/>
+                <choice index="10" value="160" name="Cue points" isEnabled="1" isActive="0"/>
+                <choice index="11" value="170" name="Beatlooper" isEnabled="1" isActive="0"/>
+                <choice index="12" value="180" name="Auto Pilot" isEnabled="1" isActive="0"/>
+                <choice index="13" value="125" name="UV Map" isEnabled="1" isActive="0"/>
+                <choice index="14" value="126" name="UV Map Dest" isEnabled="1" isActive="0"/>
+              </choices>
+            </propertySectionsState>
+          </ui>
         </settings>
         <videoClip>
-          <source type="ffgl" couldContainVideo="1" name="Solid Color" shortName="Solid Color"
-                  uniqueId="A403" fileName="C:\Program Files (x86)\Resolume Arena 5.0.1\plugins\vfx\AVFFGLSolidColor.dll"/>
+          <source type="ffgl" couldContainVideo="1" name="Gradients" shortName="Gradients"
+                  uniqueId="A401" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\AVFFGLGradients.dll"/>
           <provider transparent="1">
             <parameters>
               <parameter>
                 <name value="param1"/>
-                <nameGiven value="Hue"/>
-                <values curValue="0.751131222" defaultValue="0" startValue="0" stopValue="1"/>
+                <nameGiven value="Hue 1"/>
+                <values curValue="0.75" defaultValue="0" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param2"/>
-                <nameGiven value="Saturation"/>
+                <nameGiven value="Hue 2"/>
+                <values curValue="0.75" defaultValue="0.5" startValue="0" stopValue="1"/>
               </parameter>
               <parameter>
                 <name value="param3"/>
-                <nameGiven value="Brightness"/>
+                <nameGiven value="Saturation"/>
               </parameter>
               <parameter>
                 <name value="param4"/>
-                <nameGiven value="Alpha"/>
+                <nameGiven value="Brightness"/>
+              </parameter>
+              <parameter>
+                <name value="param5"/>
+                <nameGiven value="Alpha 1"/>
+              </parameter>
+              <parameter>
+                <name value="param6"/>
+                <nameGiven value="Alpha 2"/>
+                <values curValue="0" defaultValue="1" startValue="0" stopValue="1"/>
               </parameter>
             </parameters>
             <settings>
@@ -1969,11 +2966,10 @@
               <parameter paramControlType="2">
                 <name value="Duration"/>
                 <nameGiven value="Duration"/>
-                <values curValue="5000" defaultValue="5000" startValue="0" stopValue="2.0736e+009"/>
               </parameter>
             </settings>
           </provider>
-          <settings name="Solid Color" desc="Source&#13;&#10;&#13;&#10;" fileId="1051112814"
+          <settings name="Gradients" desc="Source&#13;&#10;&#13;&#10;" fileId="488181539"
                     renderPassOrder="0,1,2">
             <playbackSettings>
               <timelineMode value="3"/>
@@ -1981,14 +2977,23 @@
             </playbackSettings>
             <parameters>
               <parameter paramType="10" paramSubType="2" paramControlType="1" orgDuration="5000"
-                         duration="5000">
+                         duration="440">
                 <name value="Position"/>
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="4099.14717" defaultValue="0" startValue="0" stopValue="5000"/>
-                <pointsOfInterest value="0"/>
-                <jumpToPointsOfInterest value="-1"/>
+                <values curValue="2432" defaultValue="0" startValue="2176" stopValue="2616"/>
+                <pointsOfInterest value="0">
+                  <choices>
+                    <choice index="0" value="0" name="" isEnabled="1" isActive="0"/>
+                    <choice index="1" value="0" name="" isEnabled="1" isActive="0"/>
+                    <choice index="2" value="0" name="" isEnabled="1" isActive="0"/>
+                    <choice index="3" value="2616" name="" isEnabled="1" isActive="1"/>
+                    <choice index="4" value="0" name="" isEnabled="1" isActive="0"/>
+                    <choice index="5" value="0" name="" isEnabled="1" isActive="0"/>
+                  </choices>
+                </pointsOfInterest>
+                <jumpToPointsOfInterest value="3"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
                 <direction value="0"/>
                 <playmode value="1"/>
@@ -2015,6 +3020,28 @@
               </parameter>
             </parameters>
           </settings>
+          <effects>
+            <effect uniquePresetId="10000" fileName="C:\Program Files (x86)\Resolume Arena 5.1.2\plugins\vfx\FFGLCircles.dll"
+                    uniqueId="A125" name="Circles">
+              <folded value="0"/>
+              <versionInfo name="Resolume Arena" majorVersion="5" minorVersion="1" microVersion="2"
+                           revision="56477" id="1"/>
+              <parameter>
+                <name value="Opacity"/>
+                <nameGiven value="Opacity"/>
+              </parameter>
+              <parameter>
+                <name value="param1"/>
+                <nameGiven value="size"/>
+                <values curValue="0.782051282" defaultValue="0.5" startValue="0" stopValue="1"/>
+              </parameter>
+              <parameter paramType="0">
+                <name value="param2"/>
+                <nameGiven value="Black BG"/>
+                <values curValue="1" defaultValue="0" startValue="0" stopValue="1"/>
+              </parameter>
+            </effect>
+          </effects>
         </videoClip>
         <audioClip/>
       </clip>
@@ -2100,7 +3127,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="3826.11234" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="256" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -2181,7 +3208,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="4099.14717" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="1328" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>
@@ -2261,7 +3288,7 @@
                 <nameGiven value="Position"/>
                 <textValue value=""/>
                 <extended value="0"/>
-                <values curValue="449.422121" defaultValue="0" startValue="0" stopValue="5000"/>
+                <values curValue="1040" defaultValue="0" startValue="0" stopValue="5000"/>
                 <pointsOfInterest value="0"/>
                 <jumpToPointsOfInterest value="-1"/>
                 <speedFactor curValue="1" defaultValue="1" startValue="0.0001" stopValue="10"/>

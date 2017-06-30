@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="2400"
+     height="1350" viewport="0 0 2400 1350" stroke-width="1" stroke="#000000"
+     fill="none">
+  <g id="Projector output">
+    <polygon id="Slice 1" points="0,0,2400,0,2400,1350,0,1350"/>
+    <path id="Mask 1" d="M 993.378 546.639 L 846.004 433.607 L 642.429 478.707 L 601.255 739.966 L 723.508 927.688 L 870.909 972.715 L 1018.67 927.198 L 1183.66 978.473 L 1357.13 919.004 L 1490.78 981.936 L 1642.37 919.299 L 1773.82 691.677 L 1708.01 437.391 L 1492.65 403.043 L 1351.77 542.834 L 1176.95 454.368 L 993.378 546.639 z"/>
+  </g>
+</svg>

@@ -5,7 +5,7 @@
      height="1350" viewport="0 0 2400 1350" stroke-width="1" stroke="#000000"
      fill="none">
   <g id="Precompose">
-    <polygon id="OneImage" points="0,0,2400,0,2400,1350,0,1350"/>
     <polygon id="SmallImages" points="0,0,2400,0,2400,1350,0,1350"/>
+    <polygon id="OneImage" points="0,0,2400,0,2400,1350,0,1350"/>
   </g>
 </svg>

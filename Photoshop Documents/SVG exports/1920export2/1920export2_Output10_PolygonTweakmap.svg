@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1920"
+     height="1080" viewport="0 0 1920 1080" stroke-width="1" stroke="#000000"
+     fill="none">
+  <g id="PolygonTweakmap">
+    <path id="Polygon 16" d="M 1275 638 L 1424 546 L 1336 728 L 1208 790 L 1275 638 z"/>
+    <path id="Polygon 15" d="M 1234 467 L 1352 355 L 1424 546 L 1275 638 L 1234 467 z"/>
+    <path id="Polygon 14" d="M 1084.69 439.401 L 1195 339 L 1352 355 L 1234 467 L 1084.69 439.401 z"/>
+    <path id="Polygon 13" d="M 1084.69 439.401 L 1234 467 L 1275 638 L 1162 599 L 1084.69 439.401 z"/>
+    <path id="Polygon 12" d="M 1162 599 L 1275 638 L 1208 790 L 1091 750 L 1162 599 z"/>
+    <path id="Polygon 11" d="M 1020 649 L 1162 599 L 1091 750 L 942 789 L 1020 649 z"/>
+    <path id="Polygon 10" d="M 941.383 519.37 L 1084.69 439.401 L 1162 599 L 1020 649 L 941.383 519.37 z"/>
+    <path id="Polygon 9" d="M 883 670 L 941.383 519.37 L 1020 649 L 942 789 L 883 670 z"/>
+    <path id="Polygon 8" d="M 734 602 L 883 670 L 942 789 L 810 751 L 734 602 z"/>
+    <path id="Polygon 7" d="M 796.489 444.943 L 941.383 519.37 L 883 670 L 734 602 L 796.489 444.943 z"/>
+    <path id="Polygon 6" d="M 796.489 444.943 L 931.882 365.767 L 1084.69 439.401 L 941.383 519.37 L 796.489 444.943 z"/>
+    <path id="Polygon 5" d="M 658.722 475.031 L 795 448 L 734 602 L 624 643 L 658.722 475.031 z"/>
+    <path id="Polygon 4" d="M 624 643 L 734 602 L 810 751 L 700 785 L 624 643 z"/>
+    <path id="Polygon 3" d="M 480 562 L 624 643 L 703 784 L 588 746 L 480 562 z"/>
+    <path id="Polygon 2" d="M 502.744 373.684 L 658.722 475.031 L 624 643 L 480 562 L 502.744 373.684 z"/>
+    <path id="Polygon 1" d="M 503.535 372.892 L 654.763 477.406 L 800.448 445.735 L 670.598 351.515 L 503.535 372.892 z"/>
+  </g>
+</svg>
